@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F4F4F"
+    tools:context=".Register">
+
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/lblregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_below="@+id/lblregister"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/btnprofile"
+        android:layout_below="@+id/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Photo" />
+
+    <TextView
+        android:id="@+id/lblfirstname"
+        android:layout_below="@+id/btnprofile"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:text="Firstname" />
+
+    <EditText
+        android:id="@+id/txtfirstname"
+        android:layout_below="@+id/lblfirstname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lbllastname"
+        android:layout_below="@+id/txtfirstname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Lastname" />
+
+    <EditText
+        android:id="@+id/txtlastname"
+        android:layout_below="@+id/lbllastname"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lblemail"
+        android:layout_below="@+id/txtlastname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_below="@+id/lblemail"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/lblpassword1"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/txtpassword1"
+        android:layout_below="@+id/lblpassword1"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/lblpassword2"
+        android:layout_below="@+id/txtpassword1"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Re-Type Password" />
+
+    <EditText
+        android:id="@+id/txtpassword2"
+        android:layout_below="@+id/lblpassword2"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_below="@+id/txtpassword2"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+    </RelativeLayout>
+</ScrollView>

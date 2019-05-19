@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F4F4F"
+    tools:context=".HomeActivity">
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/lblemail"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_below="@+id/lblemail"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lblpassword"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="150dp"
+        android:textSize="17sp"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_below="@+id/lblpassword"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_below="@+id/txtpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/registerlink"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Create account" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in"
+        android:layout_below="@+id/registerlink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_width="150dp">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_login"
+            android:layout_below="@+id/google_sign_in"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:onClick="buttonclickLoginFb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Continue with Facebook"
+            android:background="@color/com_facebook_blue"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
